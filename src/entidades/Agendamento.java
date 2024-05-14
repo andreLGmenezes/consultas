@@ -1,5 +1,13 @@
 import java.time.LocalDateTime;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Agendamento {
+    @Id
+	@GeneratedValue
     private int id;
     private String nomePaciente;
     private String email;

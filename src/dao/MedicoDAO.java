@@ -4,6 +4,16 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+
+import entidades.Agendamento;
+import entidades.Clinica;
+import entidades.Medico;
+
+import util.AgendamentoAdminBean;
+import util.MedicoBean;
+import util.AgendamentoBean;
+import util.util;
+
 public class MedicoDAO {
     private Connection connection;
     public MedicoDAO(Connection connection) {

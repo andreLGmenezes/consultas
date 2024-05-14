@@ -6,6 +6,16 @@ import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+
+import entidades.Agendamento;
+import entidades.Clinica;
+import entidades.Medico;
+
+import util.AgendamentoAdminBean;
+import util.MedicoBean;
+import util.AgendamentoBean;
+import util.util;
+
 public class AgendamentoDAO {
     private Connection connection;
     public AgendamentoDAO(Connection connection) {

@@ -1,4 +1,11 @@
 import java.util.List;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import entidades.Agendamento;
+import entidades.Clinica;
+import entidades.Medico;
 
 public class MedicoBean {
     private Medico medico;

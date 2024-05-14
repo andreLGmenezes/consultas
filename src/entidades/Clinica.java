@@ -1,4 +1,11 @@
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Clinica {
+    @Id
+	@GeneratedValue
     private int id ;
     private String telefone;
     private String endereço;
