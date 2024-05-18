@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Consultas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Agendamento de Consultas</h1>
+    <form id="formulario-consulta">
+        <label for="nome-paciente">Nome do Paciente:</label>
+        <input type="text" id="nome-paciente" name="nome-paciente" required>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="clinica">Clínica:</label>
+        <select id="clinica" name="clinica" required>
+            <!-- Opções de clínicas serão populadas dinamicamente -->
+        </select>
+        <label for="medico">Médico:</label>
+        <select id="medico" name="medico" required>
+            <!-- Opções de médicos serão populadas dinamicamente -->
+        </select>
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data" required>
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" required>
+        <button type="submit">Agendar Consulta</button>
+    </form>
+    <table id="tabela-consultas">
+        <thead>
+            <tr>
+                <th>Nome do Paciente</th>
+                <th>E-mail</th>
+                <th>Clínica</th>
+                <th>Médico</th>
+                <th>Data</th>
+                <th>Hora</th>
+                <th>Status</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Consultas serão populadas dinamicamente -->
+        </tbody>
+    </table>
+    <script src="scripts.js"></script>
+</body>
+</html>
